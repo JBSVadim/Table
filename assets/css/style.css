@@ -1,0 +1,100 @@
+:root {
+  --second-color: #dbdbdb;
+  --first-color: #e7e7e7;
+  --table-radius: 10px;
+}
+
+body {
+  margin: 10px;
+}
+table {
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 1.5em;
+  width: 100%;
+    
+}
+
+thead td:first-child {
+  border-top-left-radius: var(--table-radius)
+}
+
+thead td:last-child {
+  border-top-right-radius: var(--table-radius);
+}
+
+tfoot td:first-child {
+  border-bottom-left-radius: var(--table-radius);
+  }
+
+tfoot td:last-child {
+  border-bottom-right-radius: var(--table-radius);
+}  
+td {
+  padding:8px;
+  vertical-align: middle
+}
+thead {
+  color: white;
+}
+
+span {
+  font-size: 2em;
+}
+thead > tr > td:first-child {
+  background-color: #7887ab;
+}
+
+thead > tr > td + td {
+  background-color: #4f628e;
+}
+
+thead > tr > td + td + td {
+  background-color:#2e4172;
+}
+
+thead > tr > td + td + td +td {
+background-color: #162955;
+}
+
+thead > tr > td + td +td +td +td {
+  background-color: #061539;
+}
+
+tbody >tr:nth-child(odd) > td:nth-child(odd) {
+  background-color: var(--second-color);
+}
+
+tbody > tr:nth-child(even) >td:nth-child(odd) {
+  background-color: var(--first-color);
+}
+
+tbody > tr:nth-child(odd) > td:nth-child(even) {
+  background-color: var(--first-color);
+}
+
+tfoot > tr > td:nth-child(odd) {
+  background-color: var(--second-color);
+}
+
+tfoot > tr > td:nth-child(even) {
+  background-color: var(--first-color);
+}
+
+button {
+  background-color: #d3d3d3;
+  text-transform: uppercase;
+  padding: 5px 10px;
+  border: 1px solid grey;
+  font-size: 0.8em;
+}
+
+button:hover {
+  background-color: rgb(180, 157, 157);
+}
+
+tbody > tr > td:first-child {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
