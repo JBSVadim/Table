@@ -45,19 +45,19 @@ thead > tr > td:first-child {
   background-color: #7887ab;
 }
 
-thead > tr > td + td {
+thead > tr > td:nth-child(2) {
   background-color: #4f628e;
 }
 
-thead > tr > td + td + td {
+thead > tr > td:nth-child(3) {
   background-color:#2e4172;
 }
 
-thead > tr > td + td + td +td {
+thead > tr > td:nth-child(4){
 background-color: #162955;
 }
 
-thead > tr > td + td +td +td +td {
+thead > tr > td:nth-child(5) {
   background-color: #061539;
 }
 
@@ -93,8 +93,3 @@ button:hover {
   background-color: rgb(180, 157, 157);
 }
 
-tbody > tr > td:first-child {
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
-}
